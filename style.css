@@ -84,14 +84,14 @@ progress,
     margin-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-
+   
 
 
 }
 
 span {
     margin: 10px;
-    line-height: 1.3rem;
+    line-height: 2rem;
 
 }
 
