@@ -32,6 +32,7 @@ body {
     width: 950px;
     height: 900px;
     display: flex;
+    margin: 1%;
 
 }
 
@@ -67,7 +68,7 @@ progress,
 .sidebar {
     background-color: var(--color-sidebar);
     width: 350px;
-    height:1200px ;
+    height:1490px ;
 
 
 }
