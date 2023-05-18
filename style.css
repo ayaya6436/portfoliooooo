@@ -1,10 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* les variables pour contenir les couleurs */
+
+/* Les variables pour contenir les couleurs */
 :root {
     --color-title: #1B304D;
     --color-sidebar: #D9D9D9;
@@ -25,16 +25,13 @@ body {
     background-color: var(--color-sidebar);
     display: grid;
     grid-template-columns: 1fr 3fr;
-    width: 950px;
-    height: 900px;
-    display: flex;
+    width: 100%;
+    max-width: 950px;
+    height: auto;
     margin: 1%;
-
 }
 
-
-/* style sur la partie sidebar */
-
+/* Style sur la partie sidebar */
 .profil,
 .contact,
 .langue {
@@ -47,7 +44,6 @@ body {
 
 .languebtn {
     margin-top: 10%;
-
 }
 
 progress,
@@ -63,16 +59,15 @@ progress,
 
 .sidebar {
     background-color: var(--color-sidebar);
-    width: 350px;
-    height:1490px ;
-
-
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
 
 .title-profil,
 .title-contact,
 .title-langue {
-    width: 300px;
+    width: 100%;
     height: 30px;
     border: 1px solid black;
     border-radius: 100px;
@@ -80,28 +75,23 @@ progress,
     margin-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-   
-
-
 }
 
-.incon{
-   
+.incon {
     width: 20px;
     height: 20px;
     margin-right: 12px;
-  
 }
-.contact-row{
+
+.contact-row {
     margin-top: 5px;
     display: flex;
     flex-direction: row;
-   
 }
+
 span {
     margin: 10px;
     line-height: 2rem;
-
 }
 
 .title1,
@@ -109,14 +99,13 @@ span {
 .title3 {
     border: 0 solid black;
     background-color: var(--color-title);
-    margin-right: 49%;
+    margin-right: auto;
     line-height: 1rem;
     width: 46%;
     border-radius: 100px;
-
-
 }
-i{
+
+i {
     margin-top: 20px;
 }
 
@@ -131,11 +120,11 @@ h4,
     color: var(--color-tite2);
 }
 
-/* style sur la partie aside */
+/* Style sur la partie aside */
 .aside {
-
     background-color: var(--color-aside);
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
 }
 
 .aside-header {
@@ -143,8 +132,6 @@ h4,
     flex-direction: column;
     text-align: end;
     margin-right: 10%;
-
-
 }
 
 .circle1 {
@@ -154,14 +141,15 @@ h4,
     background-color: #1A4F99;
     margin-top: 10%;
     border: 1px solid black;
-
 }
+
 
 .trait1 {
     border-left: 2px solid #1A4F99;
     height: 60%;
     width: 30%;
     margin-left: 30%;
+    margin-bottom: -40px;
 }
 
 .circle2 {
@@ -169,9 +157,8 @@ h4,
     width: 60%;
     border-radius: 50%;
     background-color: #1A4F99;
-    margin-top: 10%;
+    
     border: 1px solid black;
-
 }
 
 .trait2 {
@@ -179,6 +166,7 @@ h4,
     height: 30%;
     width: 30px;
     margin-left: 15px;
+    margin-bottom: -40px;
 }
 
 .groupe-trait {
@@ -186,10 +174,10 @@ h4,
 }
 
 .content-formation {
-
     margin-left: 5%;
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     display: flex;
     flex-direction: row;
     color: black;
@@ -209,10 +197,6 @@ h4,
     color: var(--color-tite2);
 }
 
-
-
-
-
 .image-trait {
     width: 100px;
     height: 100px;
@@ -229,23 +213,19 @@ h4,
     width: 200px;
     height: 20px;
     border-radius: 100px;
-
-
-
 }
 
 .formation-content {
     display: flex;
     margin-top: 20px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     font-size: 10px;
     color: black;
-
 }
 
 .formation1 {
     margin-left: 0.5rem;
-
 }
 
 
@@ -254,28 +234,22 @@ h4,
     align-items: center;
     gap: 5rem;
     margin-top: 2rem;
-
 }
 
 .expe {
     margin-left: 0;
 }
 
-
-
 .titre-exp {
     font-weight: bold;
 }
-
 
 .exp {
     display: flex;
     flex-direction: column;
 }
 
-
 .content-competence {
-
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 0.5rem;
@@ -295,75 +269,48 @@ h4,
     margin-top: 2%;
 }
 
-/* definition de la taille pour les differents types d'ecran */
-
+/* Définition de la taille pour les différents types d'écran */
 @media screen and (max-width: 965px) {
     body {
         justify-content: left;
     }
 }
 
-
-
 @media screen and (max-width: 414px) {
     .container {
-
-        width: 800px;
-        height: 100px;
+        width: 100%;
+        height: auto;
         margin: 0;
-
     }
 
-    
-.title1,
-.title2,
-.title3 {
-    border: 0 solid black;
-    background-color: var(--color-title);
-    margin-right: 49%;
-    line-height: 1rem;
-    width: 49%;
-    border-radius: 100px;
-}
+    .title1,
+    .title2,
+    .title3 {
+        width: 49%;
+    }
 
-.title-profil,
-.title-contact,
-.title-langue {
-    width: 250px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 100px;
-    color: #ffff;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-}
+    .title-profil,
+    .title-contact,
+    .title-langue {
+        width: 250px;
+    }
+
     img {
         width: 300px;
         height: 370px;
     }
 
     .sidebar {
-
-
-        background-color: var(--color-sidebar);
         width: 100px;
-        height: 1299px;
-        
-
-
     }
 
     .aside {
-
         width: 970px;
-        height: 958px;
     }
 
     .content-competence {
         margin-left: 0;
     }
-
 
     .content-formation {
         margin-left: 0;
@@ -372,72 +319,44 @@ h4,
     .content-experience {
         margin-left: 0;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 956px) {
-
     .content-profil {
-
         margin-top: 4px;
     }
-
 }
 
 @media screen and (max-width: 710px) {
-
     .contact1 {
-
         margin-top: 7px;
     }
-
 }
 
 @media screen and (max-width: 733px) {
-
     .aside {
         width: 600px;
-
     }
-
-
 }
 
 @media screen and (max-width: 688px) {
-
     .sidebar {
         width: 350px;
-
     }
-
-
 }
-
 
 @media screen and (max-width: 420px) {
     .container {
-
-        width: 800px;
-        height: 900px;
+        width: 100%;
+        height: auto;
         margin: 0;
-
     }
 
-
     .sidebar {
-
-
-        background-color: var(--color-sidebar);
         width: 300px;
-
-
     }
 
     .aside {
-
         width: 500px;
         margin: 0;
     }
@@ -446,7 +365,6 @@ h4,
         margin-left: 0;
     }
 
-
     .content-formation {
         margin-left: 0;
     }
@@ -454,8 +372,4 @@ h4,
     .content-experience {
         margin-left: 0;
     }
-
-
-
-
 }
