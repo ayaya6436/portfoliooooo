@@ -193,8 +193,9 @@ h4,
 }
 
 .aside-poste {
-    margin-top: 5%;
+    
     color: var(--color-tite2);
+    font-size: 15px;
 }
 
 .image-trait {
